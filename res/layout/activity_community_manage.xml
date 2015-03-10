@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#7EC0EE">
+	
+    <Button
+            android:id="@+id/add_community"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="增加小区"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:onClick="addCommunity" />
+    <Button
+            android:id="@+id/remove_community"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/add_community"
+            android:text="删除小区"
+            android:textColor="#000"
+            android:textSize="26sp" 
+            android:onClick="removeCommunity"/>
+
+</LinearLayout>

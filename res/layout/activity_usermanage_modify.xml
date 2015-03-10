@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_pubspace">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30sp"
+        android:text="用户信息修改"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+ 	<RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/user_phone"
+            android:layout_width="175dp"
+            android:layout_height="27dp"
+            android:layout_toRightOf="@+id/TextView02"
+            android:background="#e9e9e9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:hint="请输入新手机号"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:textColorLink="#FFF" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="110dp"
+            android:layout_height="27dp"
+            android:textSize="17sp"
+            android:gravity="center" 
+            android:background="#55BFE7"
+            android:layout_alignBaseline="@+id/user_phone"
+            android:layout_alignBottom="@+id/user_phone"
+            android:layout_marginLeft="10dp"
+            android:text="手机号："
+            android:textColor="#FFF" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="175dp"
+            android:layout_height="27dp"
+            android:textSize="14sp"
+            android:background="#e9e9e9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/user_phone"
+            android:hint="请输入姓名"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/TextView02"
+            android:textColor="#000"
+            android:textColorLink="#FFF" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="110dp"
+            android:layout_height="27dp"
+            android:textSize="17sp"
+            android:gravity="center" 
+            android:background="#55BFE7"
+            android:layout_alignBaseline="@+id/user_name"
+            android:layout_alignBottom="@+id/user_name"
+            android:layout_marginLeft="10dp"
+            android:text=" 姓名："
+            android:textColor="#FFF"/>
+        
+          <EditText
+            android:id="@+id/user_password"
+            android:layout_width="175dp"
+            android:layout_height="27dp"
+            android:textSize="14sp"
+            android:background="#e9e9e9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/user_name"
+            android:hint="请输入新密码"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/TextView02"
+            android:textColor="#000"
+            android:textColorLink="#FFF" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="110dp"
+            android:layout_height="27dp"
+            android:textSize="17sp"
+            android:gravity="center" 
+            android:background="#55BFE7"
+            android:layout_alignBaseline="@+id/user_password"
+            android:layout_alignBottom="@+id/user_password"
+            
+            android:layout_marginLeft="10dp"
+            android:text=" 密码："
+            android:textColor="#FFF"/>
+        
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="110dp"
+            android:layout_height="27dp"
+            android:textSize="17sp"
+            android:gravity="center" 
+            android:background="#55BFE7"
+            android:layout_below="@+id/user_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:text=" 用户状态："
+            android:textColor="#FFF"/>
+
+               <Button
+            android:id="@+id/user_modify"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="修改"
+            android:onClick="modify"
+            android:background="#1c9cdb"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+        
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/TextView05" >
+
+        <RadioButton
+            android:id="@+id/unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解封"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/unlock"
+            android:text="封号"
+            android:textColor="#FFF" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    </LinearLayout>

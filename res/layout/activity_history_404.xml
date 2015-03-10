@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:background="@drawable/bg_pubspace"
+    android:orientation="vertical" >
+
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical|center_horizontal"
+      android:layout_marginTop="150dp"
+      android:gravity="center"
+      android:padding="30sp"
+      android:text="暂无此手机号相关信息"
+      android:textColor="#FFF"
+      android:textSize="25sp" />
+
+    </LinearLayout>

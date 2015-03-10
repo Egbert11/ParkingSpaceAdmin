@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_pubspace" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation = "vertical">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#FFF"
+        android:text="交易额查询" />
+    
+    <TextView
+        android:id="@+id/turnover_day_text"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:gravity="center" 
+        android:background="#55BFE7"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="30dp"
+        android:text=" 2015-03-09当天交易额："
+        android:textColor="#FFF"/>
+    
+    <TextView
+        android:id="@+id/turnover_day"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:gravity="center" 
+        android:background="#55BFE7"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@+id/turnover_day_text"
+        android:layout_marginLeft="30dp"
+        android:text=" "
+        android:textColor="#CD0000"/>
+</RelativeLayout>
+
+</LinearLayout>

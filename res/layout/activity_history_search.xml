@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_pubspace">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30sp"
+        android:text="用户历史订单查询"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+  <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <EditText
+            android:id="@+id/history_phone"
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/TextView02"
+            android:background="#e9e9e9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:hint="请输入用户手机号"
+            android:inputType="phone"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:textColorLink="#FFF" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:gravity="center" 
+            android:background="#55BFE7"
+            android:layout_alignBaseline="@+id/history_phone"
+            android:layout_alignBottom="@+id/history_phone"
+            android:layout_marginLeft="10dp"
+            android:text="手机号："
+            android:textColor="#FFF" />
+
+               <Button
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/history_phone"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="搜索"
+            android:background="#1c9cdb"
+            android:textColor="#FFF"
+            android:onClick="search"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+    </LinearLayout>

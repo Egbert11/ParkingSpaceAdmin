@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#7EC0EE">
+	
+    <Button
+            android:id="@+id/turnover_sum"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="总交易额"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:onClick="turnoverSum" />
+    <Button
+            android:id="@+id/turnover_day"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/turnover_sum"
+            android:text="按天查看"
+            android:textColor="#000"
+            android:textSize="26sp" 
+            android:onClick="turnoverDay"/>
+
+</LinearLayout>
